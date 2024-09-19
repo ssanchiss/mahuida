@@ -275,13 +275,35 @@ p{
 
 
 /*cards de ubicacion y envios */
-.container-tajetas{
+/* Centra el contenedor de tarjetas dentro de su contenedor */
+.container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-
 }
+
+/* Asegura que el row se alinee al centro */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si es necesario */
+}
+
+/* Ajusta el espaciado entre las tarjetas */
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Espaciado inferior entre tarjetas */
+}
+
+/* Asegura que las imágenes dentro de las tarjetas sean adecuadas */
+
+/* Asegura que el iframe ocupe el ancho completo del contenedor */
+.card-body iframe {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 100%; /* No se extiende más allá del contenedor */
+}
+
 
 #nosotros p{
     margin-bottom: 40px;  
@@ -332,7 +354,7 @@ p{
 
 .card {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    width: 250px;
+    width: 290px;
     display: block;
     flex-direction: column;
     align-items: center;
