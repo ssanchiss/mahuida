@@ -1,0 +1,595 @@
+
+.carter-one-regular {
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(224, 206, 172);
+
+}
+
+
+
+body {
+    background-size: cover;
+    background-position: center;
+    font-weight: 1500;
+    font-family: "Carter One", system-ui;
+    
+
+
+
+}
+header {
+    width: 100%;
+    display: flex;
+    background-color:rgb(120, 90, 68,0.8) ;
+    margin: 0px;
+    padding-bottom: 40px;
+
+    flex-direction: column; /* Organiza los elementos en columnas */
+    align-items: center; /* Centra horizontalmente los elementos dentro del header */
+}
+
+/*rgb(158, 137, 106,0.8)*/
+main{
+    margin: 0;
+    background-color: rgb(158, 137, 106,0.8);
+}
+
+footer{
+    background-color:rgb(120, 90, 68,0.8) ;
+    margin: 0;
+}
+
+
+/*video de fondo*/
+
+/* Estilos para el video de fondo */
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 0;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Para asegurarse que cubra todo el espacio sin distorsionarse */
+}
+
+/* Estilos para el contenido */
+.contenido {
+    position: relative;
+    z-index: 1;
+    color: white; /* Ajustar el color del texto para que se vea sobre el video */
+    text-align: center;
+}
+
+
+.container-Logo {
+    display: flex;
+    flex-direction: column; /* Alinea el logo y el nombre en columna */
+    align-items: center; /* Centra horizontalmente el logo y el nombre */
+}
+
+.img-logo {
+    max-width: 800px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: 160px;
+    width: auto;
+}
+
+.container-Logo h1{
+    padding-bottom: 0px;
+}
+
+
+/*nav bar */
+
+.nav1{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+
+.nav1 a, .nav2 a {
+    text-decoration: none;
+    padding: 10px;
+    color: wheat;
+}
+.nav1 a, .nav2 a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 20px; /* Espacio horizontal entre los enlaces de nav1 */
+    background-color: rgb(64, 24, 23);
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+
+
+ .nav2 a:hover {
+    transform: scale(1.2);
+
+}
+
+.nav1 a:hover{
+    transform: scale(1.2);
+
+}
+
+
+
+
+
+/*cards mate-cuchillo*/
+/* Estilo general para la sección */
+
+
+
+#section-cards {
+    display: flex;
+    flex-direction: column; /* Coloca las imágenes una debajo de la otra */
+    align-items: center; /* Centra las imágenes horizontalmente */
+    gap: 0px; /* Espacio entre las imágenes */
+   padding-top: 0%; /* Espacio superior */
+    
+}
+
+/* Estilo de los enlaces */
+#section-cards a {
+    display: inline-block; /* Permite aplicar padding y otras propiedades como box-shadow */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    
+}
+
+/* Estilo de las imágenes */
+.img-mate, .img-cuchillo {
+    height: 130px;
+    min-height: 130PX;
+    min-width: 130px;
+    width: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px,solid black;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra por defecto */
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto de sombra */
+}
+
+/* Efecto de animación */
+.slide-right {
+    -webkit-animation: slide-right 10s forwards;
+    animation: slide-right 10s forwards;
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+.slide-left {
+    -webkit-animation: slide-left 7s forwards;
+    animation: slide-left 7s forwards;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+/* Efecto de sombra al hacer clic */
+
+
+
+#section-cards a:active .img-mate,
+#section-cards a:active .img-cuchillo {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al hacer clic */
+}
+
+
+h2{
+    margin-top: 0;
+    text-align: center;
+    background-color: rgb(64, 24, 23,0.7);
+    padding: 0px;
+
+}
+h3{
+    display: flex;
+    justify-content: center;
+    
+    
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(222, 184, 135,0.6);
+    
+}
+
+h4{
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+p{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    
+}
+
+
+
+
+/*cards de ubicacion y envios */
+.col-md-4{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nosotros p{
+    margin-bottom: 40px;  
+}
+#nosotros h2{
+    margin-bottom: 40px;  
+}
+.card:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+}
+.card {
+    transition: all 0.3s ease;
+    opacity: 80%;
+    background-color: wheat;
+    transition: transform 0.3s ease; /* Aplica la transición */
+    margin:0;
+}
+
+.card-header {
+    cursor: pointer;
+    background-color: #f8f9fa;
+    display: block;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    background-color: wheat;
+    margin: 0;
+}
+
+
+
+.img-card{
+    height: 50px;
+}
+
+.h2-card{
+    margin: 0;
+    background-color: transparent;
+    
+}
+.card-body {
+    max-height: 200px; /* Tamaño máximo del contenido expandido */
+    overflow-y: auto; /* Añadir scroll si el contenido es mayor que el contenedor */
+    text-align: center; /* Centra el texto dentro del cuerpo de la tarjeta */
+}
+
+.card-body iframe {
+    width: 100%;
+    height: 300px; /* Ajusta la altura del iframe si es necesario */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 40px;
+        width: 250px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+}
+
+.card-header {
+    display: block;
+    align-items: center;
+   text-align: center;
+    padding: 10px; /* Añade un poco de relleno para que el contenido no toque los bordes */
+}
+
+.card-body p{
+    color: black;
+}
+/*carrousel*/
+
+
+
+
+
+
+#productos{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+#mates{
+    margin-bottom: 20px;
+}
+
+#cuchillos{
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+}
+
+
+#accesorios{
+    margin-top: 60px;
+    margin-bottom:20px ;
+}
+
+#grabados{
+    margin-top: 60px;
+    margin-bottom:20px ;
+}
+#empresariales{
+    margin-top: 60px;
+}
+
+
+
+a{
+    text-decoration:transparent ;
+}
+
+
+.carousel {
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    width: 80%; /* Ajusta el ancho del carrusel según sea necesario */
+    
+}
+
+
+.carousel-inner{
+    max-width: 300px; /* Ajusta el ancho máximo según sea necesario */
+    max-height: 300px;
+    overflow: hidden; /* Oculta lo que se salga del cuadro */
+    position: relative;
+
+    
+}
+
+
+
+
+
+
+.carousel-inner img {
+    width: 100%; /* Asegura que las imágenes llenen el ancho del carrusel */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.btn-consultar {
+    display: block;
+    margin: 20px auto; /* Centra el botón horizontalmente y añade margen */
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    background-color: rgb(112, 80, 56); /* Cambia el color de fondo según sea necesario */
+    color: white; /* Cambia el color del texto según sea necesario */
+    border: none;
+    border-radius: 5px; /* Ajusta el radio de borde según sea necesario */
+    text-align: center;
+}
+
+.btn-consultar:hover {
+    background-color: rgb(38, 24, 12); /* Cambia el color de fondo en hover */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+ /*grid de grabados*/
+ 
+
+
+
+
+ /*contacto*/
+
+ .contact-section {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si la altura es mayor */
+    min-height: 40vh; /* Opcional: Asegura que el contenedor ocupe al menos el alto de la vista */
+    padding: 0px;
+}
+
+.container-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    transition: background 0.3s, border-color 0.3s;
+    max-width: 70%;
+    
+}
+
+.container-contacto:hover {
+    background-color: rgb(222, 184, 135,0.6); /* Fondo negro semi-transparente */
+    border-color: #888;
+}
+
+.container-contacto h2 {
+    font-size: 1.8rem;
+    color: black;
+    background-color: transparent;
+}
+
+.container-contacto img {
+    max-width: 100%;
+    height: 75px;
+}
+
+
+.container-contacto {
+    background-color: rgb(191, 153, 105,0.7); /* Fondo negro semi-transparente */
+    border-radius: 10px; /* Opcional: redondear las esquinas */
+    color: wheat;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+/*POLITICA*/
+
+.container-politicas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/*redes*/
+.container-logo-redes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.logo-redes {
+    height: 7rem;
+    padding-bottom: 3rem;
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+}
+.logo-redes:hover {
+    transform: scale(1.4);
+}
+
+.texto-redes{
+    background-color: transparent;
+}
+
+
+.saludo{
+    background-color: transparent;
+}
+.despedida p{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 25px;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+
+
+
+
+.img-logo{
+
+    height: 240px;
+    width: auto;
+}
+
+
+.nav1{
+    margin-bottom: 80px;
+ 
+
+}
+
+.nav2 {
+    justify-content: space-between;
+}
+
+.img-mate, .img-cuchillo {
+    height: 250px;
+}
+
+
+
+.carousel {
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    width: 80%; /* Ajusta el ancho del carrusel según sea necesario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+}

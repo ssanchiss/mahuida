@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+
+    <title>Mahuida</title>
+</head>
+<body>
+
+    <header>
+            <section class="container-Logo">
+                <img class="img-logo" src="./img/logo-fake-removebg-preview.png" alt="">
+            </section>
+            <section>
+                <nav class="nav1">
+                    <a href="#nosotros">NOSOTROS</a>
+                    <a href="#contacto">CONTACTO</a>
+                </nav>
+                <nav class="nav2">
+                    <a href="#productos">PRODUCTOS</a>
+                    <a href="#grabados">GRABADOS</a>
+                </nav>
+            </section>
+    </header>
+    <div class="video-background"></div>
+        <video autoplay muted loop id="background-video">
+            <source src="./img/videoSlow.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="contenido">
+            <!-- Tu contenido aquí -->
+        </div>
+    </div>
+
+
+
+    <main>
+        <section id="section-cards">
+            <a href="#mates">
+                <img class="img-mate slide-right" src="./img/pedidosEmpresariales/ming3.jpeg" alt="Mate">
+            </a>
+        
+            <a href="#cuchillos">
+                <img class="img-cuchillo slide-left" src="./img/grabados/cuchillotop.jpeg" alt="Cuchillo">
+            </a>
+        </section>
+        
+        <section id="nosotros" >
+            <h2>NOSOTROS</h2>
+            <p>Mahuida se especializa en la
+                creación de mates y cuchillos
+                artesanales de alta calidad que
+                combinan tradición, diseño y
+                
+                funcionalidad.</p>
+            <p>Cada producto es una pieza
+                única, elaborada con técnicas
+                tradicionales y materiales como
+                calabaza, algarrobo y cuero de
+                
+                primera.</p>
+            <p>Nuestra marca se destaca por su
+                compromiso y atención, ofreciendo
+                productos que no solo cumplen
+                con su función, sino que también
+                son un reflejo de la cultura.</p>
+                <P>También ofrecemos grabados en
+                    las virolas de aluminio, acero y alpaca.</P>
+
+            <div class="container-tarjetas"></div>
+                <!-- Tarjeta 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#benefit1">
+                            <img class="img-card" src="./img/ubic.png" alt="">
+                            <h2 class="h2-card">Ubicacion</h2>
+
+                        </div>
+                        <div id="benefit1" class="collapse">
+                            <div class="card-body">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13059.615337055047!2d-57.755018183468124!3d-35.084135464566714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a28d001819e0f5%3A0x2844d94eb93aeee6!2smahuida.mates!5e0!3m2!1ses!2sar!4v1726617672031!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                           
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#benefit2">
+                            <img class="img-card" src="./img/envios.png" alt="">
+                            <h2 class="h2-card">Envios</h2>
+                        </div>
+                        <div id="benefit2" class="collapse">
+                            <div class="card-body">
+                                <p>Realizamos envios a todo el pais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <h2 id="productos">PRODUCTOS</h2>
+            <div>
+                <!-- Sección Mates -->
+<h3 id="mates">MATES</h3>
+
+<h4>Imperiales</h4>
+<div id="carouselImperiales" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/imperiales/i1.jpeg" class="d-block w-100" alt="Imperiales 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/imperiales/i2.jpeg" class="d-block w-100" alt="Imperiales 2">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/imperiales/i3.jpeg" class="d-block w-100" alt="Imperiales 3">
+        </div>
+    </div>
+    <a href="https://wa.me/542216001871?text=Hola! me intersa uno de tus productos de Mahuida..." target="_blank">
+        <button class="btn-consultar">Consultar</button>
+    </a>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselImperiales" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselImperiales" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<h4>Torpedos</h4>
+<div id="carouselTorpedos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/torpedos/torpedosinvirola.jpeg" class="d-block w-100" alt="Torpedos 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/torpedos/torpedocuerovirola.jpeg" class="d-block w-100" alt="Torpedos 2">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/torpedos/torpedofeo.jpeg" class="d-block w-100" alt="Torpedos 3">
+        </div>
+    </div>
+    <a href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+        <button class="btn-consultar">Consultar</button>
+    </a>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTorpedos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTorpedos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<h4>De Algarrobo</h4>
+<div id="carouselAlgarrobo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/otrosMates/algarrobo1.jpeg" class="d-block w-100" alt="De Algarrobo 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/otrosMates/algarrobo2.jpeg" class="d-block w-100" alt="De Algarrobo 2">
+        </div>
+    </div>
+    <a href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+        <button class="btn-consultar">Consultar</button>
+    </a>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlgarrobo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselAlgarrobo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Sección Cuchillos -->
+<h3 id="cuchillos">CUCHILLOS</h3>
+
+<div id="carouselLargos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/cuchillos/cuchilloboca.jpeg" class="d-block w-100" alt="Largos 1">
+        </div>
+        <div class="carousel-item"></div>
+            <img src="./img/accesorios/plato.jpeg" class="d-block w-100" alt="2">
+        </div>
+        <a href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+            <button class="btn-consultar">Consultar</button>
+        </a>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLargos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLargos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+</div>
+
+<!-- Sección Accesorios -->
+<h3 id="accesorios">ACCESORIOS</h3>
+
+<h4>Materas</h4>
+<div id="carouselMateras" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/accesorios/canasta.jpeg" class="d-block w-100" alt="Materas 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/accesorios/materamahuida.jpeg "class="d-block w-100" alt="Materas 2">
+        </div>
+    </div>
+    <a href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+        <button class="btn-consultar">Consultar</button>
+    </a>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMateras" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselMateras" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<h4>Yerberas</h4>
+<div id="carouselYerberas" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/accesorios/bolsitas.jpeg" class="d-block w-100" alt="Yerberas 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/accesorios/paraAuto.jpeg" class="d-block w-100" alt="Yerberas 2">
+        </div>
+    </div>
+    <a href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+        <button class="btn-consultar">Consultar</button>
+    </a>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselYerberas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselYerberas" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<h4>Bombillas</h4>
+<div id="carouselBombillas" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/pedidosEmpresariales/ming3.jpeg" class="d-block w-100" alt="Bombillas 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/pedidosEmpresariales/ming3.jpeg" class="d-block w-100" alt="Bombillas 2">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/pedidosEmpresariales/ming3.jpeg" class="d-block w-100" alt="Bombillas 3">
+        </div>
+    </div>
+    <a href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+        <button class="btn-consultar">Consultar</button>
+    </a>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBombillas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselBombillas" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+                
+                <h3 id="grabados">GRABADOS PERSONALIZADOS</h3>
+                <div id="carouselGrabados" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/grabados/cuchillotop.jpeg" class="d-block w-100" alt="Bombillas 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/grabados/mategrabado.jpeg" class="d-block w-100" alt="Bombillas 2">
+                        </div>
+                    </div>
+                    <a href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+                        <button class="btn-consultar">Consultar</button>
+                    </a>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGrabados" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGrabados" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+                
+                <h3 id="empresariales">Pedidos Empresariales </h3>
+                <div id="carouselEmpresariales" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/pedidosEmpresariales/ming3.jpeg" class="d-block w-100" alt="Bombillas 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/pedidosEmpresariales/empresarial-de-cote.jpeg" class="d-block w-100" alt="Bombillas 2">
+                        </div>
+                    </div>
+                    <a href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+                        <button class="btn-consultar">Consultar</button>
+                    </a>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEmpresariales" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEmpresariales" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+
+
+        </section>
+
+
+            <section id="contacto" class="contact-section">
+                <a class="container-contacto" href="https://wa.me/542216001871?text=Hola! me interesa uno de tus productos de Mahuida..." target="_blank">
+                    <h2>CONTACTO </h2>
+                    <img src="./img/carrito-de-compras.png" alt="Contacto">
+                </a>
+            </section>
+        <section class="container-politicas">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header" data-bs-toggle="collapse" data-bs-target="#benefit2">
+                    <h5>Politicas de cambio</h5>
+                    </div>
+                    <div id="benefit2" class="collapse">
+                        <div class="card-body">
+                            <p>En caso de una pinchadura/rajadura comunicate.</p>
+                            <p>(productos totalmente artesanales)</p>
+                            <p>plazo de 10 días.</p>
+                            <p>¡Estamos acá para ayudarte!</p>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="container-logo-redes">
+            <h2 class="texto-redes">¡Seguinos en nuestras redes sociales!</h2>
+            <a href="">
+                <img class="logo-redes" src="./img/instagram.png" alt="">
+            </a>
+        </section>
+
+        </section>
+        <div class="despedida">
+            <h2 class="saludo">¡Gracias por visitar Mahuida!</h2>
+            <p>Nos apasiona compartir la tradición del mate y esperamos que hayas encontrado el compañero ideal para tus momentos especiales. Si tienes alguna duda o quieres saber más sobre nuestros productos, no dudes en contactarnos. ¡Te esperamos pronto para seguir disfrutando juntos de lo mejor de nuestras raíces!</p>
+            <p><strong>¡Hasta la próxima!</strong></p>
+        </div>
+        
+        </section>
+    </main>
+    <footer>
+    <p>todos los derechos reservados</p>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+   
+   
+    <script>src="index.js"</script>
+</body>
+
+</html>
