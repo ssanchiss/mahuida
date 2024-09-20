@@ -602,7 +602,9 @@ a{
     padding-bottom: 25px;
 }
 
-
+footer p{
+    color: black;
+}
 
 
 @media screen and (min-width: 800px) {
